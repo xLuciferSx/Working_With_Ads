@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6849F649DAD87461B9A26390 /* Pods_Working_With_Ads.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08B85CFDE3C973DBC1C5BE /* Pods_Working_With_Ads.framework */; };
 		9EF03EB62247D23300F13857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF03EB52247D23300F13857 /* AppDelegate.swift */; };
 		9EF03EB82247D23300F13857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF03EB72247D23300F13857 /* ViewController.swift */; };
 		9EF03EBB2247D23300F13857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF03EB92247D23300F13857 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3516441C51FD5CCD15A2F64C /* Pods-Working With Ads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Working With Ads.debug.xcconfig"; path = "Target Support Files/Pods-Working With Ads/Pods-Working With Ads.debug.xcconfig"; sourceTree = "<group>"; };
+		8E5E002E89B5F1A66E269F4B /* Pods-Working With Ads.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Working With Ads.release.xcconfig"; path = "Target Support Files/Pods-Working With Ads/Pods-Working With Ads.release.xcconfig"; sourceTree = "<group>"; };
 		9EF03EB22247D23300F13857 /* Working With Ads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Working With Ads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF03EB52247D23300F13857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF03EB72247D23300F13857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9EF03EBC2247D23400F13857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF03EBF2247D23400F13857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EF03EC12247D23400F13857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD08B85CFDE3C973DBC1C5BE /* Pods_Working_With_Ads.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Working_With_Ads.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6849F649DAD87461B9A26390 /* Pods_Working_With_Ads.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F07D67D7E0DB9BD414F896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3516441C51FD5CCD15A2F64C /* Pods-Working With Ads.debug.xcconfig */,
+				8E5E002E89B5F1A66E269F4B /* Pods-Working With Ads.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94F6DACF4B554236B05B5FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD08B85CFDE3C973DBC1C5BE /* Pods_Working_With_Ads.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9EF03EA92247D23300F13857 = {
 			isa = PBXGroup;
 			children = (
 				9EF03EB42247D23300F13857 /* Working With Ads */,
 				9EF03EB32247D23300F13857 /* Products */,
+				39F07D67D7E0DB9BD414F896 /* Pods */,
+				94F6DACF4B554236B05B5FE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EF03EC42247D23400F13857 /* Build configuration list for PBXNativeTarget "Working With Ads" */;
 			buildPhases = (
+				CE41C0A01005C25F462C95BE /* [CP] Check Pods Manifest.lock */,
 				9EF03EAE2247D23300F13857 /* Sources */,
 				9EF03EAF2247D23300F13857 /* Frameworks */,
 				9EF03EB02247D23300F13857 /* Resources */,
+				79CEBA364CDD79A96AE8754B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79CEBA364CDD79A96AE8754B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Working With Ads/Pods-Working With Ads-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Working With Ads/Pods-Working With Ads-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Working With Ads/Pods-Working With Ads-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE41C0A01005C25F462C95BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Working With Ads-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EF03EAE2247D23300F13857 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		9EF03EC52247D23400F13857 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3516441C51FD5CCD15A2F64C /* Pods-Working With Ads.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		9EF03EC62247D23400F13857 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5E002E89B5F1A66E269F4B /* Pods-Working With Ads.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
