@@ -16,17 +16,27 @@ class ViewController: UIViewController {
 
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     @IBOutlet weak var bannerView: GADBannerView!
-    
-    
+    var interstial: GADInterstitial!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
+        interstial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
         bannerView.delegate = self
-        bannerView.adUnitID = "ca-app-pub-1306678494669379/8368464167"
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
-    }   
+        let request = GADRequest()
+        interstial.load(request)
+    }
+    
+    
+    @IBAction func interstialShowAd(_ sender: Any) {
+        if interstial.isReady {
+            interstial.present(fromRootViewController: self)
+        } else {
+            print("Ad wasn't ready")
+        }
+    }
 }
 
 extension ViewController: GADBannerViewDelegate {

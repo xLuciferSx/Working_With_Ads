@@ -31,13 +31,28 @@
                                     <constraint firstAttribute="height" constant="50" id="aVq-KP-Ez6"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caf-4L-4wX">
+                                <rect key="frame" x="20" y="648" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Interstial">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="interstialShowAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPb-fn-C9O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="3sV-hs-R6F" secondAttribute="bottom" id="07H-gJ-j1T"/>
+                            <constraint firstItem="3sV-hs-R6F" firstAttribute="top" secondItem="Caf-4L-4wX" secondAttribute="bottom" constant="50" id="3Fb-zT-g6B"/>
                             <constraint firstItem="3sV-hs-R6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mr9-Sw-5rX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Caf-4L-4wX" secondAttribute="trailing" constant="20" id="NbX-Xi-999"/>
+                            <constraint firstItem="Caf-4L-4wX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WwH-4b-ePp"/>
                             <constraint firstItem="DS2-g4-u2G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="chb-Pi-ifA"/>
                             <constraint firstItem="DS2-g4-u2G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jUG-3V-gDT"/>
+                            <constraint firstItem="Caf-4L-4wX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q5o-EQ-s4D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
